@@ -83,14 +83,14 @@ unsysroot_file_name (const char *name)
 }
 
 static int
-wrap_stat_body (const char *file, struct stat64 *buf, int lstat)
+wrap_stat_body (const char *file, struct stat64 *buf, int islstat)
 {
   char* file_copy;
   char *tmpname;
   int ret;
   int len;
 
-  tmpname = sysroot_file_name (file, lstat);
+  tmpname = sysroot_file_name (file, islstat);
 
   if (tmpname == NULL)
     return -1;
@@ -107,7 +107,7 @@ wrap_stat_body (const char *file, struct stat64 *buf, int lstat)
   if (len && (file_copy[len - 1] == '/' || file_copy[len - 1] == '\\'))
     file_copy[len - 1] = '\0';
 
-  ret = lstat ? lstat64 (file_copy, buf) : stat64 (file_copy, buf);
+  ret = islstat ? lstat64 (file_copy, buf) : stat64 (file_copy, buf);
 
   free (file_copy);
 
