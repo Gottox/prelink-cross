@@ -290,7 +290,7 @@ int _dl_name_match_p (const char *name, const struct link_map *map);
 
 /* Error handling */
 
-#include <error.h>
+#include <wrap_error.h>
 #include <errno.h>
 
 /* Mimic the behavior and output of _dl_signal_error */

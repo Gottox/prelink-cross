@@ -19,7 +19,7 @@
 #include <assert.h>
 #include <byteswap.h>
 #include <endian.h>
-#include <error.h>
+#include <wrap_error.h>
 
 #include "prelink.h"
 

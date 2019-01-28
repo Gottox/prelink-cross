@@ -18,7 +18,7 @@
 #include <config.h>
 #include <assert.h>
 #include <errno.h>
-#include <error.h>
+#include <wrap_error.h>
 #include "fptr.h"
 
 struct opd_refent;

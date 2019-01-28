@@ -19,7 +19,7 @@
 #ifndef GELFX_H
 #define	GELFX_H
 
-#include <error.h>
+#include <wrap_error.h>
 #include <libelf.h>
 #include <stdlib.h>
 #include <string.h>

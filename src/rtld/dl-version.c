@@ -20,7 +20,7 @@
    <http://www.gnu.org/licenses/>.  */
 
 #include <assert.h>
-#include <error.h>
+#include <wrap_error.h>
 #include <errno.h>
 #include <string.h>
 #include "rtld.h"

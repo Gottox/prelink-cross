@@ -18,7 +18,7 @@
 #include <config.h>
 #include <alloca.h>
 #include <errno.h>
-#include <error.h>
+#include <wrap_error.h>
 #include <fcntl.h>
 #include <string.h>
 #include <time.h>

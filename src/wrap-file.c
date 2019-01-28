@@ -18,7 +18,7 @@
 #include <config.h>
 #include <assert.h>
 #include <errno.h>
-#include <error.h>
+#include <wrap_error.h>
 #include <fcntl.h>
 #include <ftw.h>
 #include <glob.h>
