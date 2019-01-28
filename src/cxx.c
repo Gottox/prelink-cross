@@ -19,7 +19,7 @@
 #include <alloca.h>
 #include <assert.h>
 #include <errno.h>
-#include <error.h>
+#include <wrap-error.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>

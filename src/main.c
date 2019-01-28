@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
-#include <error.h>
+#include <wrap-error.h>
 #include <argp.h>
 #include <stdlib.h>
 #include <unistd.h>

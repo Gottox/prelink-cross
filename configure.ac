@@ -85,6 +85,7 @@ fi
 
 AC_CHECK_LIB(selinux,is_selinux_enabled)
 AC_CHECK_HEADERS(selinux/selinux.h)
+AC_CHECK_HEADERS(error.h)
 
 dnl This test must come as early as possible after the compiler configuration
 dnl tests, because the choice of the file model can (in principle) affect

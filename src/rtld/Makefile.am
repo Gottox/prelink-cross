@@ -20,6 +20,7 @@ sbin_PROGRAMS = prelink-rtld
 prelink_rtld_SOURCES = ../data.c ../dso.c \
 		       ../canonicalize.c ../wrap-file.c \
 		       ../reloc-info.c ../src/reloc-info.h \
+		       ../wrap-error.c ../wrap-error.h \
 		       rtld.c ld-libs.h \
 		       dl-hash.h dl-object.c dl-load.c \
 		       dl-tls.c dl-version.c dl-misc.c \

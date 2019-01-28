@@ -21,7 +21,7 @@
 #include <config.h>
 #include <assert.h>
 #include <ctype.h>
-#include <error.h>
+#include <wrap-error.h>
 #include <errno.h>
 #include <argp.h>
 #include <fcntl.h>

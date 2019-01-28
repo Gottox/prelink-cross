@@ -21,7 +21,7 @@
 #include <byteswap.h>
 #include <endian.h>
 #include <errno.h>
-#include <error.h>
+#include <wrap-error.h>
 #include <limits.h>
 #include <string.h>
 #include <sys/types.h>
