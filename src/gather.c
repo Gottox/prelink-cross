@@ -39,6 +39,10 @@
 # define FTW_STOP		1
 #endif
 
+#ifndef GLOB_BRACE
+#define GLOB_BRACE 0
+#endif
+
 static int gather_lib (struct prelink_entry *ent);
 static int implicit;
 
