@@ -374,7 +374,7 @@ main (int argc, char *argv[])
 
   if (sysroot)
     {
-      sysroot = canonicalize_file_name (sysroot);
+      sysroot = realpath (sysroot, NULL);
       if (sysroot == NULL)
         error (EXIT_FAILURE, 0, "Could not canonicalize --root argument");
       asprintf ((char **) &prelink_conf, "%s%s", sysroot, prelink_conf);
