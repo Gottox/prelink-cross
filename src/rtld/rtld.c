@@ -762,7 +762,7 @@ load_dsos (DSO *dso, int host_paths)
   dso_list->loader = NULL;
 
   if (host_paths)
-    dso_list->canon_filename = canonicalize_file_name (dso->filename);
+    dso_list->canon_filename = realpath (dso->filename, NULL);
   else
     dso_list->canon_filename = prelink_canonicalize (dso->filename, &st);
 
@@ -1179,7 +1179,7 @@ main(int argc, char **argv)
   argp_parse (&argp, argc, argv, 0, &remaining, 0);
 
   if (sysroot)
-    sysroot = canonicalize_file_name (sysroot);
+    sysroot = realpath (sysroot, NULL);
 
   if (remaining == argc)
     error (1, 0, "missing file arguments\nTry `%s: --help' for more information.", argv[0]);
