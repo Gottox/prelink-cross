@@ -21,8 +21,6 @@
 
 #include <features.h>
 
-__BEGIN_DECLS
-
 /* Standard ELF types.  */
 
 #include <stdint.h>
@@ -3579,7 +3577,5 @@ enum
 #define R_RISCV_TLS_TPREL32	10
 #define R_RISCV_TLS_TPREL64	11
 #define R_RISCV_NUM		12
-
-__END_DECLS
 
 #endif	/* elf.h */
