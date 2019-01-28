@@ -153,6 +153,11 @@ typedef uint8_t Elf64_Byte;
 #define R_ARM_IRELATIVE		160
 #endif
 
+#ifndef __GLIBC__
+typedef int (*__nftw64_func_t)(const char *, const struct stat *,
+		int, struct FTW *);
+#endif
+
 struct prelink_entry;
 struct prelink_info;
 struct PLArch;
