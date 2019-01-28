@@ -91,7 +91,7 @@ struct unique_sym_table * _ns_unique_sym_table = NULL;
 									      \
     cp = result = alloca (len);						      \
     for (cnt = 0; cnt < sizeof (all) / sizeof (all[0]); ++cnt)		      \
-      cp = __stpcpy (cp, all[cnt]);					      \
+      cp = stpcpy (cp, all[cnt]);					      \
 									      \
     result;								      \
   })
