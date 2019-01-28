@@ -21,6 +21,10 @@
 #ifndef _MD5_H
 #define _MD5_H 1
 
+#ifndef __P
+#define __P(args)	args
+#endif
+
 #include <limits.h>
 #include <stdint.h>
 typedef uint32_t md5_uint32;
